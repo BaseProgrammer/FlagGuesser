@@ -28,9 +28,9 @@ function randomiseFlag() {
 
 function addScore() {
 
-   var currentScore = atob(localStorage.getItem("i"))
+   var currentScore = localStorage.getItem("i")
    // Score 
-   localStorage.setItem("i", btoa(currentScore + 1))
+   localStorage.setItem("i", currentScore + 1)
 
 }
 
@@ -39,6 +39,6 @@ function alertScore() {
 
    var currentScore = localStorage.getItem("i")
 
-   alert("Your currentScore is: ", atob(currentScore))
+   alert("Your currentScore is: ", currentScore)
 
 }
