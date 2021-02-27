@@ -28,7 +28,7 @@ function randomiseFlag() {
 
 function addScore() {
 
-   var currentScore = localStorage.getItem("i")
+   var currentScore = localStorage.getItem("i") || 0
    // Score 
    localStorage.setItem("i", currentScore + 1)
 
